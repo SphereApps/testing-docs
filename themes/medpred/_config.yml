@@ -1,0 +1,35 @@
+
+# html lang
+language: ru
+
+# Miscelaneous
+favicon: /favicon.ico
+
+# stylesheets loaded in the <head>
+stylesheets:
+- https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700&amp;subset=cyrillic
+- /css/senna.css
+- /css/medpred.css
+
+# scripts loaded in the end of the body
+# - https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js
+scripts:
+- /js/senna-min.js
+- /js/medpred.js
+
+navigation:
+
+- text: Введение
+  children:
+  - text: Документация
+    path: index.html
+
+- text: Section 2
+  children:
+  - text: Sub 2.1
+    path: guide/sub2-1.html
+    children:
+    - text: Sub 2.1.1
+      path: guide/sub2-1-1.html
+    - text: Sub 2.1.2
+      path: guide/sub2-1-2.html
